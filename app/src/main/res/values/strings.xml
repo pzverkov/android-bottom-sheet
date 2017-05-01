@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BottomSheet</string>
+    <string name="action_snack">Action</string>
+    <string name="press_to_open_bottom_sheet">Press button to open Bottom Sheet</string>
+    <string name="text_is_main">text is my text is my text text is my text is my text text is my text is my text text is my text is my text</string>
+</resources>
