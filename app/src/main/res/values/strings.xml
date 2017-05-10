@@ -3,4 +3,21 @@
     <string name="action_snack">Action</string>
     <string name="press_to_open_bottom_sheet">Press button to open Bottom Sheet</string>
     <string name="text_is_main">text is my text is my text text is my text is my text text is my text is my text text is my text is my text</string>
+
+    <string name="share">Share</string>
+    <string name="dialog">Open Dialog</string>
+    <string name="list_button">List</string>
+    <string name="grid_button">Grid</string>
+    <string name="intent_picker">Intent Picker</string>
+    <string name="menu_resource">Inflating a Menu</string>
+    <string name="document">Document</string>
+    <string name="spreadsheet">Spreadsheet</string>
+    <string name="folder">Folder</string>
+    <string name="upload_photos">Upload photos or videos</string>
+    <string name="use_camera">Use camera</string>
+    <string name="share_some_text">Share some text!</string>
+    <string name="image_picker">Image picker</string>
+    <string name="show">Show</string>
+    <string name="reopen">Reopen as other type</string>
+    <string name="bottomsheet_fragment">BottomSheet Fragment</string>
 </resources>

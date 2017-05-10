@@ -1,17 +1,21 @@
-package com.sc.bottomsheet;
+package com.sc.bottomsheet.ui;
 
 import android.app.Dialog;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.BottomSheetDialog;
 import android.support.design.widget.BottomSheetDialogFragment;
 import android.support.design.widget.CoordinatorLayout;
 import android.view.View;
+import android.widget.FrameLayout;
+
+import com.sc.bottomsheet.R;
 
 /**
  * Created by Peter on 01.05.2017.
  */
 
-public class BottomSheetDialogFragmentCustom extends BottomSheetDialogFragment {
+public class BottomSheetDialogCustomBottom extends BottomSheetDialogFragment {
 
     private BottomSheetBehavior.BottomSheetCallback mBottomSheetBehaviorCallback = new BottomSheetBehavior.BottomSheetCallback() {
 
@@ -40,5 +44,10 @@ public class BottomSheetDialogFragmentCustom extends BottomSheetDialogFragment {
         if (behavior != null && behavior instanceof BottomSheetBehavior) {
             ((BottomSheetBehavior) behavior).setBottomSheetCallback(mBottomSheetBehaviorCallback);
         }
+
+        BottomSheetDialog d = (BottomSheetDialog) dialog;
+
+        FrameLayout bottomSheet = (FrameLayout) d.findViewById(R.id.design_bottom_sheet); // use R.java of current project
+        BottomSheetBehavior.from(bottomSheet).setState(BottomSheetBehavior.STATE_EXPANDED);
     }
 }

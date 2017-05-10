@@ -8,4 +8,45 @@
     tools:context="com.sc.bottomsheet.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <com.sc.bottomsheet.ui.BottomSheetLayout
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/share_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/share_some_text" />
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:onClick="share"
+                android:text="@string/share" />
+
+            <Button
+                android:id="@+id/dialog_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:onClick="dialog"
+                android:text="@string/dialog" />
+
+        </LinearLayout>
+
+    </com.sc.bottomsheet.ui.BottomSheetLayout>
+
 </android.support.constraint.ConstraintLayout>

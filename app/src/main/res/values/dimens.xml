@@ -1,3 +1,11 @@
 <resources>
+    
+    <!--APP-->
     <dimen name="fab_margin">16dp</dimen>
+
+    <!--SHEET-->
+    <dimen name="bottomsheet_image_tile_spacing">4dp</dimen>
+    <dimen name="bottomsheet_grid_text_spacing">2dp</dimen>
+    <dimen name="bottomsheet_default_sheet_width">0dp</dimen>
+
 </resources>
